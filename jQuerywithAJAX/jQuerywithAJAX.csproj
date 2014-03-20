@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC6D1812-9E2E-4EAE-AA9A-D9B48CC9E1E5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pure_HTML_Project1</RootNamespace>
+    <AssemblyName>jQuerywithAJAX</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--<Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="0102\end\ahah.html" />
+    <Content Include="0102\end\fragments\irises.html" />
+    <Content Include="0102\end\fragments\lilies.html" />
+    <Content Include="0102\end\fragments\peruvian.html" />
+    <Content Include="0102\end\fragments\sunflower.html" />
+    <Content Include="0102\start\ahah.html" />
+    <Content Include="0102\start\fragments\irises.html" />
+    <Content Include="0102\start\fragments\lilies.html" />
+    <Content Include="0102\start\fragments\peruvian.html" />
+    <Content Include="0102\start\fragments\sunflower.html" />
+    <Content Include="0104\end\mission.htm" />
+    <Content Include="0104\start\mission.htm" />
+    <Content Include="0105\end\mission.htm" />
+    <Content Include="0105\start\mission.htm" />
+    <Content Include="0106\start\ziptastic.html" />
+    <Content Include="0107\end\ziptastic.html" />
+    <Content Include="explorecalifornia\booking.htm" />
+    <Content Include="explorecalifornia\contact.htm" />
+    <Content Include="explorecalifornia\index.htm" />
+    <Content Include="explorecalifornia\join.htm" />
+    <Content Include="explorecalifornia\jquery.min.js" />
+    <Content Include="explorecalifornia\mission.htm" />
+    <Content Include="explorecalifornia\tours\tour_detail_backpack.htm" />
+    <Content Include="explorecalifornia\tours\tour_detail_bigSur-2.htm" />
+    <Content Include="explorecalifornia\tours\tour_detail_bigsur.htm" />
+    <Content Include="explorecalifornia\tours\tour_detail_bigsur_trails.htm" />
+    <Content Include="explorecalifornia\tours\tour_detail_cycle.htm" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\arrow-left-active.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\arrow-left-hover.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\arrow-left.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\arrow-right-active.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\arrow-right-hover.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\arrow-right.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\busy.gif" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\nav-left-active.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\nav-left.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\nav-right-active.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\nav-right.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\page-gradient.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\pause-active.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\pause.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\play-active.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\play.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\white-solid-bkg.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\images\white-stripes-bkg.png" />
+    <Content Include="explorecalifornia\_css\ImageSlideShow\santorini\santorini.css" />
+    <Content Include="explorecalifornia\_css\main.css" />
+    <Content Include="explorecalifornia\_images\backpack_bug.gif" />
+    <Content Include="explorecalifornia\_images\back_bug.gif" />
+    <Content Include="explorecalifornia\_images\back_large.gif" />
+    <Content Include="explorecalifornia\_images\beach_yoga_sm.jpg" />
+    <Content Include="explorecalifornia\_images\bigSur.jpg" />
+    <Content Include="explorecalifornia\_images\book_bug.gif" />
+    <Content Include="explorecalifornia\_images\calm_bug.gif" />
+    <Content Include="explorecalifornia\_images\calm_desc_bug.gif" />
+    <Content Include="explorecalifornia\_images\contact_main.gif" />
+    <Content Include="explorecalifornia\_images\contact_nav.gif" />
+    <Content Include="explorecalifornia\_images\cycle_desc_bug.gif" />
+    <Content Include="explorecalifornia\_images\cycle_logo.gif" />
+    <Content Include="explorecalifornia\_images\desert_bug.gif" />
+    <Content Include="explorecalifornia\_images\desert_desc_bug.gif" />
+    <Content Include="explorecalifornia\_images\explorers_main.gif" />
+    <Content Include="explorecalifornia\_images\explorers_nav.gif" />
+    <Content Include="explorecalifornia\_images\flag_photo.jpg" />
+    <Content Include="explorecalifornia\_images\footer_back.gif" />
+    <Content Include="explorecalifornia\_images\gallery\golden_gate.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\golden_gate_thumb.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\old_copcar.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\old_copcar_thumb.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\redwoods_01.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\redwoods_thumb.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\red_rock_01.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\red_rock_thumb.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\tahoe_01.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\tahoe_thumb.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\ventura_01.jpg" />
+    <Content Include="explorecalifornia\_images\gallery\ventura_thumb.jpg" />
+    <Content Include="explorecalifornia\_images\kids_desc_bug.gif" />
+    <Content Include="explorecalifornia\_images\logo.gif" />
+    <Content Include="explorecalifornia\_images\lunch.jpg" />
+    <Content Include="explorecalifornia\_images\main_back.jpg" />
+    <Content Include="explorecalifornia\_images\map_bigsur.gif" />
+    <Content Include="explorecalifornia\_images\map_channel.gif" />
+    <Content Include="explorecalifornia\_images\map_valley.gif" />
+    <Content Include="explorecalifornia\_images\map_whitney.gif" />
+    <Content Include="explorecalifornia\_images\map_yosemite.gif" />
+    <Content Include="explorecalifornia\_images\mission_look.jpg" />
+    <Content Include="explorecalifornia\_images\mission_main.gif" />
+    <Content Include="explorecalifornia\_images\mission_nav.gif" />
+    <Content Include="explorecalifornia\_images\more_bug.gif" />
+    <Content Include="explorecalifornia\_images\nature_desc_bug.gif" />
+    <Content Include="explorecalifornia\_images\page_background.jpg" />
+    <Content Include="explorecalifornia\_images\resources_nav.gif" />
+    <Content Include="explorecalifornia\_images\resource_main.gif" />
+    <Content Include="explorecalifornia\_images\return_top.gif" />
+    <Content Include="explorecalifornia\_images\snow_desc_bug.gif" />
+    <Content Include="explorecalifornia\_images\springs_desc_bug.gif" />
+    <Content Include="explorecalifornia\_images\star_bullet.gif" />
+    <Content Include="explorecalifornia\_images\tag.png" />
+    <Content Include="explorecalifornia\_images\taste_desc_bug.gif" />
+    <Content Include="explorecalifornia\_images\thead_back.gif" />
+    <Content Include="explorecalifornia\_images\tours_main.gif" />
+    <Content Include="explorecalifornia\_images\tours_nav.gif" />
+    <Content Include="jquery\jquery.min.js" />
+    <Content Include="petal\basket.html" />
+    <Content Include="petal\care-tips-orchids.html" />
+    <Content Include="petal\category-arrangements.html" />
+    <Content Include="petal\checkout-step1.html" />
+    <Content Include="petal\css\all.css" />
+    <Content Include="petal\css\improved.css" />
+    <Content Include="petal\css\jqwd.css" />
+    <Content Include="petal\css\modified.css" />
+    <Content Include="petal\css\original.css" />
+    <Content Include="petal\fonts\domine-bold-webfont.svg" />
+    <Content Include="petal\fonts\domine-regular-webfont.svg" />
+    <Content Include="petal\fonts\muli-regular-webfont.svg" />
+    <Content Include="petal\fragments\irises.html" />
+    <Content Include="petal\fragments\lilies.html" />
+    <Content Include="petal\fragments\peruvian.html" />
+    <Content Include="petal\fragments\sunflower.html" />
+    <Content Include="petal\images\160_alstromeria_87519333.jpg" />
+    <Content Include="petal\images\160_build_a_bouquet_166133374.jpg" />
+    <Content Include="petal\images\160_calla_blush_160337318.jpg" />
+    <Content Include="petal\images\160_daffodil_122442732.jpg" />
+    <Content Include="petal\images\160_daisy_white_159207232.jpg" />
+    <Content Include="petal\images\160_dendrobium2_152158743.jpg" />
+    <Content Include="petal\images\160_gerbera_purple_146798391.jpg" />
+    <Content Include="petal\images\160_iris_purple_121549009.jpg" />
+    <Content Include="petal\images\160_lilac_157045915.jpg" />
+    <Content Include="petal\images\160_lily_pink_160102549.jpg" />
+    <Content Include="petal\images\160_rose_peach_89153628.jpg" />
+    <Content Include="petal\images\160_rose_pink_112277154.jpg" />
+    <Content Include="petal\images\160_sunflower_146748795.jpg" />
+    <Content Include="petal\images\160_tulip_purple_160910481.jpg" />
+    <Content Include="petal\images\200_alstromeria_87519333.jpg" />
+    <Content Include="petal\images\200_arrangement_163066655.jpg" />
+    <Content Include="petal\images\200_arrangement_94972439.jpg" />
+    <Content Include="petal\images\200_arrangement_yellow_tulip.jpg" />
+    <Content Include="petal\images\200_birthday_163159054.jpg" />
+    <Content Include="petal\images\200_birthday_163167595.jpg" />
+    <Content Include="petal\images\200_bouquet_watering can_orange_163066621.jpg" />
+    <Content Include="petal\images\200_butterflies_120624479.jpg" />
+    <Content Include="petal\images\200_carnations_basket_92246977.jpg" />
+    <Content Include="petal\images\200_carnations_daisies_92007328.jpg" />
+    <Content Include="petal\images\200_cattleya2_149067833.jpg" />
+    <Content Include="petal\images\200_colorful_gerbera_119722776.jpg" />
+    <Content Include="petal\images\200_colorful_vases_160822027.jpg" />
+    <Content Include="petal\images\200_dendrobium2_152158743.jpg" />
+    <Content Include="petal\images\200_gerbera_freesia_104250655.jpg" />
+    <Content Include="petal\images\200_golden_tulips_148182635.jpg" />
+    <Content Include="petal\images\200_hyacinths_147970493.jpg" />
+    <Content Include="petal\images\200_irises_121549009.jpg" />
+    <Content Include="petal\images\200_irises_lilies_87478811.jpg" />
+    <Content Include="petal\images\200_irises_tulips_121357306.jpg" />
+    <Content Include="petal\images\200_lilacs_tulips_157045915.jpg" />
+    <Content Include="petal\images\200_lilac_daisy_136944897.jpg" />
+    <Content Include="petal\images\200_maidenhair_147280529.jpg" />
+    <Content Include="petal\images\200_oncidium2_152176782.jpg" />
+    <Content Include="petal\images\200_phalaenopsis_164373689.jpg" />
+    <Content Include="petal\images\200_pink_green_mums_160331816.jpg" />
+    <Content Include="petal\images\200_pink_white_daisies_146806077.jpg" />
+    <Content Include="petal\images\200_purple_daisy_rose104274224.jpg" />
+    <Content Include="petal\images\200_red_roses_111795740.jpg" />
+    <Content Include="petal\images\200_red_yellow_roses_119752732.jpg" />
+    <Content Include="petal\images\200_stargazer_lilies_162048907.jpg" />
+    <Content Include="petal\images\200_sunflowers_146748795.jpg" />
+    <Content Include="petal\images\200_sunflowers_glads_153546286.jpg" />
+    <Content Include="petal\images\200_tulips_daffodils2_153986183.jpg" />
+    <Content Include="petal\images\200_tulips_daffodils3_153986295.jpg" />
+    <Content Include="petal\images\200_tulips_daffodils4_160232631.jpg" />
+    <Content Include="petal\images\200_tulips_daffodils_139756476.jpg" />
+    <Content Include="petal\images\200_tulips_daffodils_153986115.jpg" />
+    <Content Include="petal\images\200_tulips_irises_121357306.jpg" />
+    <Content Include="petal\images\200_tulips_watering_can_155465445.jpg" />
+    <Content Include="petal\images\200_white_lily_pink_daisy_92493508.jpg" />
+    <Content Include="petal\images\200_white_rose_mix_166610678.jpg" />
+    <Content Include="petal\images\200_white_tulip_163199928.jpg" />
+    <Content Include="petal\images\200_yellow_white_mums_147664285.jpg" />
+    <Content Include="petal\images\280_heirloom_pink_roses_153499160.jpg" />
+    <Content Include="petal\images\280_irises_121549009.jpg" />
+    <Content Include="petal\images\280_white_red_tulips_160382424.jpg" />
+    <Content Include="petal\images\290_cymbidium_bouquet.jpg" />
+    <Content Include="petal\images\290_spring_tulips.jpg" />
+    <Content Include="petal\images\450_2_maidenhair_fern_166585539.jpg" />
+    <Content Include="petal\images\450_2_tulip_field_154321412.jpg" />
+    <Content Include="petal\images\450_rose_peach_89153628.jpg" />
+    <Content Include="petal\images\450_rose_pink_112277154.jpg" />
+    <Content Include="petal\images\450_rose_red_92974998.jpg" />
+    <Content Include="petal\images\450_rose_white_100291489.jpg" />
+    <Content Include="petal\images\450_rose_yellow_187406sdc.jpg" />
+    <Content Include="petal\images\450_tulips_daffodils_139756476.jpg" />
+    <Content Include="petal\images\450_tulips_daffodils_163271740.jpg" />
+    <Content Include="petal\images\70_alstromeria_87519333.jpg" />
+    <Content Include="petal\images\70_build_a_bouquet_166133374.jpg" />
+    <Content Include="petal\images\70_calla_blush_160337318.jpg" />
+    <Content Include="petal\images\70_daffodil_122442732.jpg" />
+    <Content Include="petal\images\70_daisy_white_159207232.jpg" />
+    <Content Include="petal\images\70_dendrobium2_152158743.jpg" />
+    <Content Include="petal\images\70_gerbera_purple_146798391.jpg" />
+    <Content Include="petal\images\70_iris_purple_121549009.jpg" />
+    <Content Include="petal\images\70_lilac_157045915.jpg" />
+    <Content Include="petal\images\70_lily_pink_160102549.jpg" />
+    <Content Include="petal\images\70_rose_peach_89153628.jpg" />
+    <Content Include="petal\images\70_rose_pink_112277154.jpg" />
+    <Content Include="petal\images\70_rose_red_92974998.jpg" />
+    <Content Include="petal\images\70_rose_white_100291489.jpg" />
+    <Content Include="petal\images\70_rose_yellow_187406sdc.jpg" />
+    <Content Include="petal\images\70_sunflower_146748795.jpg" />
+    <Content Include="petal\images\70_tulip_purple_160910481.jpg" />
+    <Content Include="petal\images\710_arrangement_97881968.jpg" />
+    <Content Include="petal\images\710_colorful_gerbera_119722776.jpg" />
+    <Content Include="petal\images\710_heirloom_pink_roses_153499160.jpg" />
+    <Content Include="petal\images\710_lilacs_tulips_157045915.jpg" />
+    <Content Include="petal\images\710_purple_calla_lilies_144723256.jpg" />
+    <Content Include="petal\images\710_red_yellow_roses_119752732.jpg" />
+    <Content Include="petal\images\980_colorful vases_160822027.jpg" />
+    <Content Include="petal\images\980_daffodils2_138293459.jpg" />
+    <Content Include="petal\images\980_white_rose_mix_166610678.jpg" />
+    <Content Include="petal\images\basket_banner.jpg" />
+    <Content Include="petal\images\favicon.ico" />
+    <Content Include="petal\images\html.jpg" />
+    <Content Include="petal\images\lightbox_Ashley_Luna.jpg" />
+    <Content Include="petal\images\lightbox_Audrey_Cecilia.jpg" />
+    <Content Include="petal\images\lightbox_Brenda_Burns.jpg" />
+    <Content Include="petal\images\lightbox_Debra_Wisdom.jpg" />
+    <Content Include="petal\images\lightbox_Erick_Durham.jpg" />
+    <Content Include="petal\images\lightbox_Laurel_Foucher.jpg" />
+    <Content Include="petal\images\lightbox_Marcus_Alan.jpg" />
+    <Content Include="petal\images\lightbox_Tamara_Alanwood.jpg" />
+    <Content Include="petal\images\loader.gif" />
+    <Content Include="petal\images\logo.png" />
+    <Content Include="petal\images\social.png" />
+    <Content Include="petal\images\sprite.png" />
+    <Content Include="petal\index-2.html" />
+    <Content Include="petal\index.html" />
+    <Content Include="petal\js\all.js" />
+    <Content Include="petal\js\base.min.js" />
+    <Content Include="petal\js\improved.js" />
+    <Content Include="petal\js\jquery-1.8.3.min.js" />
+    <Content Include="petal\js\jquery.colorbox-min.js" />
+    <Content Include="petal\js\jquery.min.js" />
+    <Content Include="petal\js\modified.js" />
+    <Content Include="petal\js\original.js" />
+    <Content Include="petal\js\plugins.min.js" />
+    <Content Include="petal\our-designers.html" />
+    <Content Include="petal\product-detail-arrangements.html" />
+    <Content Include="petal\shared\lightbox-ashley-luna.html" />
+    <Content Include="petal\shared\lightbox-audrey-cecilia.html" />
+    <Content Include="petal\shared\lightbox-brenda-burns.html" />
+    <Content Include="petal\shared\lightbox-debra-wisdom.html" />
+    <Content Include="petal\shared\lightbox-erick-durham.html" />
+    <Content Include="petal\shared\lightbox-laurel-foucher.html" />
+    <Content Include="petal\shared\lightbox-marcus-alan.html" />
+    <Content Include="petal\shared\lightbox-tamara-alanwood.html" />
+    <Content Include="petal\sub-category-mixed-arrangements.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\default.css" />
+    <None Include="lib\default.js" />
+    <None Include="index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="petal\fonts\domine-bold-webfont.eot" />
+    <Content Include="petal\fonts\domine-bold-webfont.ttf" />
+    <Content Include="petal\fonts\domine-bold-webfont.woff" />
+    <Content Include="petal\fonts\domine-bold-webfontd41d.eot" />
+    <Content Include="petal\fonts\domine-regular-webfont.eot" />
+    <Content Include="petal\fonts\domine-regular-webfont.ttf" />
+    <Content Include="petal\fonts\domine-regular-webfont.woff" />
+    <Content Include="petal\fonts\domine-regular-webfontd41d.eot" />
+    <Content Include="petal\fonts\muli-regular-webfont.eot" />
+    <Content Include="petal\fonts\muli-regular-webfont.ttf" />
+    <Content Include="petal\fonts\muli-regular-webfont.woff" />
+    <Content Include="petal\fonts\muli-regular-webfontd41d.eot" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:36262/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
